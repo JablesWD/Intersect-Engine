@@ -53,7 +53,7 @@ namespace Intersect.Editor.Forms.Editors.Events.Event_Commands
             // We do not want to iterate over the "NoChange" enum
             foreach (MapInstanceType instanceType in Enum.GetValues(typeof(MapInstanceType)))
             {
-                cmbInstanceType.Items.Add(instanceType.ToString());
+                cmbInstanceType.Items.Add(Strings.MapInstance.Type[(int)instanceType]);
             }
             cmbInstanceType.SelectedIndex = (int) mMyCommand.InstanceType;
         }
